@@ -9,7 +9,7 @@ export const Navbar = styled.nav`
 
   background: #161616;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   font-size: 1rem;
   position: sticky;
   top: 0;
