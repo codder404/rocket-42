@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Video from '../../video';
+
 import * as H from './styles';
 
 function Hero () {
