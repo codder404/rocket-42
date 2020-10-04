@@ -1,6 +1,7 @@
 import React from 'react';
 import { Bars } from '@styled-icons/fa-solid';
 
+import menuLinks from '../../resources/menuLinks';
 import * as N from './styles';
 
 function navbar() {
@@ -13,16 +14,9 @@ function navbar() {
         </N.MobileIcon>
         <N.NavbarMenu>
           <N.NavbarItem>
-            <N.NavbarLinks to='about'>About</N.NavbarLinks>
-          </N.NavbarItem>
-          <N.NavbarItem>
-            <N.NavbarLinks to='discover'>Discover</N.NavbarLinks>
-          </N.NavbarItem>
-          <N.NavbarItem>
-            <N.NavbarLinks to='services'>Services</N.NavbarLinks>
-          </N.NavbarItem>
-          <N.NavbarItem>
-            <N.NavbarLinks to='signup'>Portfolio</N.NavbarLinks>
+            {menuLinks.map(({ title, url }) => (
+              <N.NavbarLinks to={url}>{title}</N.NavbarLinks>
+            ))}
           </N.NavbarItem>
         </N.NavbarMenu>
         <N.NavbarBtn>
