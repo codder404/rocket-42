@@ -3,10 +3,10 @@ import React from 'react';
 import { menuLinks } from '../../resources/menuLinks';
 import * as S from './styles';
 
-function Sidebar () {
+function Sidebar ({ isOpen, toggle }) {
   return (
-    <S.Container>
-      <S.Icon>
+    <S.Container isOpen={isOpen} onClick={toggle}>
+      <S.Icon onClick={toggle}>
         <S.CloseIcon />
       </S.Icon>
       <S.SidebarWrapper>

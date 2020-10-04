@@ -32,6 +32,7 @@ export const CloseIcon = styled(Times)`
   width: 32px;
   height: 32px;
   color: #fff;
+  cursor: pointer;
 `;
 
 export const SidebarWrapper = styled.div`
