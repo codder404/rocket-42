@@ -4,12 +4,12 @@ import { Bars } from '@styled-icons/fa-solid';
 import { menuLinks } from '../../resources/menuLinks';
 import * as N from './styles';
 
-function navbar() {
+function navbar({ toggle }) {
   return (
     <N.Navbar>
       <N.Container>
         <N.NavbarLogo to='/'>Rocket</N.NavbarLogo>
-        <N.MobileIcon>
+        <N.MobileIcon onClick={toggle}>
           <Bars />
         </N.MobileIcon>
         <N.NavbarMenu>
