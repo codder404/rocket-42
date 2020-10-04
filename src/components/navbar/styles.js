@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Link as LinkN } from 'react-router-dom';
-//import { Link as LinkS } from 'react-scroll';
+import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkS } from 'react-scroll';
 
 export const Navbar = styled.nav`
   display: flex;
@@ -9,7 +9,7 @@ export const Navbar = styled.nav`
 
   background: #161616;
   height: 80px;
-  margin-top: -80px;
+  /* margin-top: -80px; */
   font-size: 1rem;
   position: sticky;
   top: 0;
@@ -31,7 +31,7 @@ export const Container = styled.div`
   max-width: 1100px;
 `;
 
-export const NavbarLogo = styled(LinkN)`
+export const NavbarLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   justify-self: flex-start;
@@ -42,4 +42,49 @@ export const NavbarLogo = styled(LinkN)`
   margin-left: 1.5rem;
   text-decoration: none;
   cursor: pointer;
+`;
+
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`;
+
+export const NavbarMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavbarItem = styled.li`
+  height: 80px;
+`;
+
+export const NavbarLinks = styled(LinkS)`
+  display: flex;
+  align-items: center;
+  
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &:active {
+    border-bottom: 3px solid #6C63FF;
+  }
 `;
