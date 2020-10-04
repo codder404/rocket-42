@@ -38,7 +38,12 @@ export const SidebarWrapper = styled.div`
   color: #fff;
 `;
 
-export const SidebarMenu = styled.ul``;
+export const SidebarMenu = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 8px);
+  text-align: center;
+`;
 
 export const SidebarLink = styled(LinkS)`
   display: flex;
@@ -53,7 +58,7 @@ export const SidebarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #f9f9f9;
+    color: #6c63ff;
     transition: 0.2s ease-in-out;
   }
 `;
