@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bars } from '@styled-icons/fa-solid';
 
-import menuLinks from '../../resources/menuLinks';
+import { menuLinks } from '../../resources/menuLinks';
 import * as N from './styles';
 
 function navbar() {

@@ -78,6 +78,7 @@ export const NavbarMenu = styled.ul`
 
 export const NavbarItem = styled.li`
   height: 80px;
+  display: flex;
 `;
 
 export const NavbarLinks = styled(LinkS)`
