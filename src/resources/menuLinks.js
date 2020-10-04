@@ -3,22 +3,22 @@ const generateId = () => '-' + Math.random().toString(36).substr(2.9);
 export const menuLinks = [
   {
     id: generateId(),
-    title: 'About',
-    url: 'about'
+    title: 'Sobre',
+    url: 'sobre'
   },
   {
     id: generateId(),
-    title: 'Discover',
-    url: 'discover'
+    title: 'Serviços',
+    url: 'servicos'
   },
   {
     id: generateId(),
-    title: 'Services',
-    url: 'services'
+    title: 'Blog',
+    url: 'blog'
   },
   {
     id: generateId(),
-    title: 'Portfolio',
+    title: 'Portfólio',
     url: 'portfolio'
   },
 ]
