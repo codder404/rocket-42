@@ -12,7 +12,7 @@ function Sidebar ({ isOpen, toggle }) {
       <S.SidebarWrapper>
         <S.SidebarMenu>
           {menuLinks.map(({ title, url }) => (
-            <S.SidebarLink to={url}>{title}</S.SidebarLink>
+            <S.SidebarLink to={url} onClick={toggle}>{title}</S.SidebarLink>
           ))}
         </S.SidebarMenu>
         <S.SidebarBtnWrap>
