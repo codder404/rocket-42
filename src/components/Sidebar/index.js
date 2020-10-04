@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { menuLinks } from '../../resources/menuLinks';
 import * as S from './styles';
 
 function Sidebar () {
@@ -10,16 +11,9 @@ function Sidebar () {
       </S.Icon>
       <S.SidebarWrapper>
         <S.SidebarMenu>
-          <S.SidebarLink to="about">About</S.SidebarLink>
-        </S.SidebarMenu>
-         <S.SidebarMenu>
-          <S.SidebarLink to="discover">Discover</S.SidebarLink>
-        </S.SidebarMenu>
-         <S.SidebarMenu>
-          <S.SidebarLink to="services">Services</S.SidebarLink>
-        </S.SidebarMenu>
-         <S.SidebarMenu>
-          <S.SidebarLink to="portfolio">Portfolio</S.SidebarLink>
+          {menuLinks.map(({ title, url }) => (
+            <S.SidebarLink to={url}>{title}</S.SidebarLink>
+          ))}
         </S.SidebarMenu>
         <S.SidebarBtnWrap>
           <S.SidebarRoute big to="/signin">Sign In</S.SidebarRoute>
