@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Hero = styled.section`
   display: flex;
@@ -29,4 +30,53 @@ export const VideoBg = styled.video`
   object-fit: cover;
   -o-object-fit: cover;
   background: #232a34;
+`;
+
+export const HeroContent = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+  max-width: 1200px;
+  padding: 8px 24px;
+  z-index: 3;
+`;
+
+export const HeroTitle = styled.h1`
+  color: #f9f9f9;
+  font-size: 3rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+export const HeroText = styled.p`
+  color: #fff;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  max-width: 600px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.3rem;
+  }
+`;
+
+export const HeroBtnWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 32px;
 `;
