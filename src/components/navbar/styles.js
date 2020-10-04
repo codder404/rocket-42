@@ -56,6 +56,12 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
   }
+
+  > svg {
+    width: 32px;
+    height: 32px;
+    color: #fff;
+  }
 `;
 
 export const NavbarMenu = styled.ul`
@@ -86,5 +92,33 @@ export const NavbarLinks = styled(LinkS)`
 
   &:active {
     border-bottom: 3px solid #6C63FF;
+  }
+`;
+
+export const NavbarBtn = styled.nav`
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavbarBtnLink = styled(LinkR)`
+  background: #6c63ff;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  color: #fff;
+  padding: 10px 22px;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.2 ease-in-out;
+    filter: brightness(90%);
   }
 `;
