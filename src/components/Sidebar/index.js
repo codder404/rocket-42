@@ -16,7 +16,7 @@ function Sidebar ({ isOpen, toggle }) {
           ))}
         </S.SidebarMenu>
         <S.SidebarBtnWrap>
-          <S.SidebarRoute big to="/signin">Sign In</S.SidebarRoute>
+          <S.SidebarRoute big to="/solicitar-orcamento">Solicitar Orçamento</S.SidebarRoute>
         </S.SidebarBtnWrap>
       </S.SidebarWrapper>
     </S.Container>
