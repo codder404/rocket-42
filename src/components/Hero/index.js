@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Video from '../../videos/video.mp4';
+import Video from '../../assets/videos/data.mp4';
 
 import * as H from './styles';
 
