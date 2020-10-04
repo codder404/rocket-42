@@ -8,7 +8,7 @@ export const Button = styled(Link)`
 
   border-radius: 0.4rem;
   background: ${({primary}) => (primary ? '#6C63FF' : '#010606')};
-  padding: ${({big}) => (big ? '0.8rem 0.9rem' : '0.7rem 2rem')};
+  padding: ${({big}) => (big ? '1.4rem 1.8rem' : '0.7rem 2rem')};
   color: ${({ dark }) => (dark ? '#fff' : '#010606')};
   font-size: ${({ fontBig}) => (fontBig ? '1.2rem' : '1rem')};
   white-space: nowrap;
