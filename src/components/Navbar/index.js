@@ -20,7 +20,7 @@ function navbar({ toggle }) {
           </N.NavbarItem>
         </N.NavbarMenu>
         <N.NavbarBtn>
-          <N.NavbarBtnLink to="/signin">Sign In</N.NavbarBtnLink>
+          <N.NavbarBtnLink to="/solicitar-orcamento">Solicitar Orçamento</N.NavbarBtnLink>
         </N.NavbarBtn>
       </N.Container>
     </N.Navbar>
