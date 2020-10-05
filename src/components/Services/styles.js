@@ -49,7 +49,8 @@ export const ServiceWrapper = styled.div`
 export const ServiceCard = styled.article`
   display: flex;
   align-items: center;
-  flex-direction: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 
   background: #fff;
   border-radius: 10px;
