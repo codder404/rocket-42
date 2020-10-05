@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   color: #fff;
-  background: ${({ light }) => (light ? '#F9F9F9' : '#161616')};
+  background: ${({ lightBg }) => (lightBg ? '#F9F9F9' : '#161616')};
 
   @media (max-width: 768px) {
     padding: 100px 0;
@@ -66,7 +66,7 @@ export const Heading = styled.h1`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({textLight}) => (textLight ? '#f7f8fa' : '#161616')};
+  color: ${({lightText}) => (lightText ? '#f7f8fa' : '#161616')};
 
   @media (max-width: 480px) {
     font-size: 2.5rem;
