@@ -34,9 +34,9 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
   id: 'team',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: 'Junta-se ao nosso Team',
   headLine: 'Saiba como nossos processos funcionam e as vantagens competitivas que oferecemos no seu negócio.',
   description: 'Nosso time de tecnologia é capaz de entregar com alta qualidade e rapidez porque utilizamos metodologia ágeis de Desenvolvimento em Software.',
@@ -46,5 +46,5 @@ export const homeObjThree = {
   alt: 'Team',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 }
