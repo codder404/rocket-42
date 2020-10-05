@@ -1,8 +1,14 @@
 import React from 'react';
 import * as BIcon from '@styled-icons/boxicons-logos';
+import { animateScroll as scroll } from 'react-scroll';
+
 import * as F from './styles';
 
 function Footer () {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
+
   return (
     <F.Container>
       <F.FooterWrap>
@@ -42,7 +48,7 @@ function Footer () {
         </F.FooterLinksContainer>
         <F.SocialMedia>
           <F.SocialMediaWrap>
-            <F.SocialLogo to="/">Rocket</F.SocialLogo>
+            <F.SocialLogo to="/" onClick={toggleHome}>Rocket</F.SocialLogo>
             <F.WebsiteRights>Rocket &copy; {new Date().getFullYear()} Todos os direitos reservados</F.WebsiteRights>
             <F.SocialIcons>
               <F.SocialIconLink href="#" target="_blank" arial-label="Facebook">
