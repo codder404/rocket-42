@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { homeObjOne } from '../resources/content';
+import { homeObjOne, homeObjTwo, homeObjThree } from '../resources/content';
 import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import Info from '../components/Information';
@@ -10,6 +10,8 @@ const Home = () => {
     <Layout>
       <Hero />
       <Info {...homeObjOne}/>
+      <Info {...homeObjTwo} />
+      <Info {...homeObjThree} />
     </Layout>
   )
 }
