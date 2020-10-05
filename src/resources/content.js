@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: 'Seu projeto sob demanda',
   headLine: 'Saiba como nossos processos funcionam e as vantagens competitivas que oferecemos no seu negócio.',
   description: 'Nosso time de tecnologia é capaz de entregar com alta qualidade e rapidez porque utilizamos metodologia ágeis de Desenvolvimento em Software.',
-  buttonLabel: 'Solicitar Orçamento',
+  buttonLabel: 'Saiba mais',
   imgStart: false,
   img: require('../assets/images/about.svg'),
   alt: 'Team',
