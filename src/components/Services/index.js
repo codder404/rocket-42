@@ -6,9 +6,9 @@ import Icon3 from '../../assets/images/code.svg';
 
 import * as S from './styles';
 
-function Services () {
+function Services ({ servicos }) {
   return (
-    <S.Container>
+    <S.Container id={servicos}>
       <S.ServiceTitle>Sob Medida, Sob Demanda</S.ServiceTitle>
       <S.ServiceWrapper>
         <S.ServiceCard>
