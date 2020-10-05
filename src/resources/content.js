@@ -40,7 +40,7 @@ export const homeObjThree = {
   topLine: 'Junta-se ao nosso Team',
   headLine: 'Saiba como nossos processos funcionam e as vantagens competitivas que oferecemos no seu negócio.',
   description: 'Nosso time de tecnologia é capaz de entregar com alta qualidade e rapidez porque utilizamos metodologia ágeis de Desenvolvimento em Software.',
-  buttonLabel: 'Saiba mais',
+  buttonLabel: 'Vem conosco',
   imgStart: false,
   img: require('../assets/images/time.svg'),
   alt: 'Team',
