@@ -16,20 +16,20 @@ export const homeObjOne = {
 }
 
 export const homeObjTwo = {
-  id: 'sobre',
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
-  topLine: 'Seu projeto sob demanda',
+  id: 'servicos',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Desenvolvimento de Software',
   headLine: 'Saiba como nossos processos funcionam e as vantagens competitivas que oferecemos no seu negócio.',
   description: 'Nosso time de tecnologia é capaz de entregar com alta qualidade e rapidez porque utilizamos metodologia ágeis de Desenvolvimento em Software.',
-  buttonLabel: 'Solicitar Orçamento',
-  imgStart: false,
+  buttonLabel: 'Saiba mais',
+  imgStart: true,
   img: require('../assets/images/code.svg'),
-  alt: 'Team',
-  dark: true,
-  primary: true,
-  darkText: false
+  alt: 'Code',
+  dark: false,
+  primary: false,
+  darkText: true
 }
 
 export const homeObjThree = {
