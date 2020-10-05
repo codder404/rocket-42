@@ -14,7 +14,10 @@ function InfoSection ({
   buttonLabel, 
   description, 
   img, 
-  alt
+  alt,
+  primary,
+  dark,
+  dark2
 }) {
   return (
     <F.Container lightBg={lightBg} id={id}>
@@ -26,7 +29,18 @@ function InfoSection ({
               <F.Heading lightText={lightText}>{headLine}</F.Heading>
               <F.Subtitle darkText={darkText}>{description}</F.Subtitle>
               <F.InfoBtnWrap>
-                <Button to='home' primary big dark fontBig>{buttonLabel}</Button>
+                <Button to='home' 
+                  primary={primary ? 1 : 0} 
+                  big 
+                  dark={dark ? 1 : 0}
+                  dark2={dark2 ? 1 : 0} 
+                  fontBig
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  >{buttonLabel}</Button>
               </F.InfoBtnWrap>
             </F.TextWrapper>
           </F.Column1>
