@@ -7,7 +7,7 @@ export const Navbar = styled.nav`
   align-items: center;
   justify-content: center;
 
-  background: #161616;
+  background: ${({scrollNav}) => (scrollNav ? '#161616' : 'transparent')};
   height: 80px;
   margin-top: -80px;
   font-size: 1rem;
