@@ -18,7 +18,7 @@ export const menuLinks = [
   },
   {
     id: generateId(),
-    title: 'Portfólio',
-    url: 'portfolio'
+    title: 'Team',
+    url: 'team'
   },
 ]
