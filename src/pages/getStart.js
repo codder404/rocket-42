@@ -1,8 +1,9 @@
 import React from 'react';
+import GetStartComp from '../components/GetStart';
 
 function GetStart () {
   return (
-    <h1>GetStart</h1>
+    <GetStartComp />
   )
 }
 
